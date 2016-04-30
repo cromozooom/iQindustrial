@@ -1,91 +1,51 @@
 extend template\jade-bootstrap\_bootstrap.jade
 append styles
 	link(href='https://fonts.googleapis.com/css?family=Josefin+Sans:400,700|Exo:400,800' rel='stylesheet' type='text/css')
-	link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css")
 block body
 	include template/topNavigation.jade
 	.container
-		// - header Page
 		.row.spaceTop
-			.col-xs-12.text-center
-				.jumbotron
-					h3 iQ Indistrial Ninja CatEGORY
-					p Microsoft surprised many last week by including an overhaul of all emojis in the preview release of the Windows 10 "Anniversary Update".
-					p
-						a.btn.btn-primary.btn-lg(href='whitepaper.html', role='button') view more
-		//
-		.row
-			.col-xs-12.col-sm-6.col-md-3
-				.card.thumbnail.cardWhitepapers
-					.headIcon
-						include assets\images\iconWhitepapers.svg
-					img(src='assets/images/thumb/whitepaper01.jpg', alt='whitepaper01')
-					.caption
-						h4 How to Make Your Ebook Marketing Campaign
-						p.description Microsoft surprised many last week by including an overhaul of all emojis in the preview release of the Windows 10 "Anniversary Update".
-						p
-							a(href='whitepaper.html', role='button') Vezi detalii
-							a.btn.btn-default.btn-sm(href='whitepaper.html', role='button') Download
-			.col-xs-12.col-sm-6.col-md-3
-				.card.thumbnail.cardWebinars
-					.headIcon
-						include assets\images\iconWebinars.svg
-					img(src='assets/images/thumb/webinar01.jpg', alt='whitepaper01')
-					.caption
-						h4 How to Make Your Ebook Marketing Campaign
-						p.description Microsoft surprised many last week by including an overhaul of all emojis in the preview release of the Windows 10 "Anniversary Update".
-						p
-							a(href='whitepaper.html', role='button') Vezi detalii
-							a.btn.btn-default.btn-sm(href='whitepaper.html', role='button') Webinar
-			.col-xs-12.col-sm-6.col-md-3
-				.card.thumbnail.cardHowTo
-					.headIcon
-						include assets\images\iconHowTo.svg
-					img(src='assets/images/thumb/howTo01.jpg', alt='whitepaper01')
-					.caption
-						h4 How to Make Your Ebook Marketing Campaign
-						p.description Microsoft surprised many last week by including an overhaul of all emojis in the preview release of the Windows 10 "Anniversary Update".
-						p
-							a.btn.btn-default.btn-sm(href='whitepaper.html', role='button') Vezi
-			.col-xs-12.col-sm-6.col-md-3
-				.card.thumbnail.cardWhitepapers
-					.headIcon
-						include assets\images\iconWhitepapers.svg
-					img(src='assets/images/thumb/whitepaper01.jpg', alt='whitepaper01')
-					.caption
-						h4 How to Make Your Ebook Marketing Campaign
-						p.description Microsoft surprised many last week by including an overhaul of all emojis in the preview release of the Windows 10 "Anniversary Update".
-						p
-							a(href='whitepaper.html', role='button') Vezi detalii
-							a.btn.btn-default.btn-sm(href='whitepaper.html', role='button') Download
-	#footer
-		.container
-			.row
-				.col-xs-12.col-sm-6
-					a.logo(href="http://www.minexgroup.eu/")
-						img(src="assets/images/logo_orange.png" alt="Minex Romania" data-pin-nopin="true")
-					p Copyright Minex Group. All Right Reserved
-				.col-xs-12.col-sm-6
-					ul.list-inline.text-right
+			.col-xs-12.col-sm-7.listDownload
+				h3 Your Download
+				hr
+				ul.list-unstyled
+					block mediaWhitepapers
 						li
-							a.facebook(href="#")
-								i.fa.fa-facebook-official.fa-2x
-						li
-							a.youtube(href="#")
-								i.fa.fa-youtube.fa-2x
-						li
-							a.twitter(href="#")
-								i.fa.fa-twitter.fa-2x
-						li
-							a.linkedin(href="#")
-								i.fa.fa-linkedin-square.fa-2x
-
-					// footer
-					// logo minex in stinga
-					// retelele sociale: facebook, youtube, twitter, linkedin
-					// Copyright / Minex Group. All Right Reserved
-					
-					// login
-					// recuperare parola
-					// pagina modificare profil plus pagina de my download
+							.media
+								.media-left
+									a(href="#")
+										img.media-object(src="assets/images/thumb/whitepaper01.jpg" alt="...")
+								.media-body
+									h4.media-heading
+										| How to Make Your Ebook Marketing Campaign
+									p
+										| Microsoft surprised many last week by including an overhaul of all emojis in the preview release of the Windows 10 "Anniversary Update".
+							hr
+					block mediaWhitepapers
+					block mediaWhitepapers
+					block mediaWhitepapers
+					block mediaWhitepapers
+					block mediaWhitepapers
+			.col-xs-12.col-sm-5.profilePage
+				h3 Your profile
+				hr
+				dl.dl-horizontal
+					dt Nume: 
+					dd Razvan
+					dt Prenume: 
+					dd Nicu
+					dt Email: 
+					dd cromozooom@gmail.com 
+					dt Industry: 
+					dd web design
+					dt Tara: 
+					dd United Kingdom
+					dt Functie: 
+					dd web designer
+					dt Password: 
+					dd *********
+					dt Edit personal data
+					dd
+						a.btn.btn-primary.btn-xs(href='whitepaper.html', role='button') edit data
+				hr
 					
