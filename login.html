@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+    <title></title>
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <!--link(rel="stylesheet",href="css/bootstrap.min.css")-->
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700|Exo:400,800" rel="stylesheet" type="text/css">
+  </head>
+  <body data-spy="scroll" data-target=".scrollspy">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" class="navbar-toggle collapsed"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="index.html" class="navbar-brand">IQ Industrial <small>Powered by minex</small></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="whitepaper-nav"><a href="whitepapers.html">Whitepapers</a></li>
+            <li class="webinars-nav"><a href="webinars.html">Webinars</a></li>
+            <li class="how-nav"><a href="howTo.html">How to do</a></li>
+            <li class="login-nav"><a href="login.html">Login</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row spaceTop">
+        <div class="col-md-6 col-md-offset-3">
+          <div class="panel panel-login">
+            <div class="panel-heading">
+              <div class="row">
+                <div class="col-xs-6"><a id="login-form-link" href="#" class="active">Login</a></div>
+                <div class="col-xs-6"><a id="register-form-link" href="#">Register</a></div>
+                <hr>
+              </div>
+            </div>
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-lg-12">
+                  <form id="login-form" action="#" method="post" role="form" style="display: block;">
+                    <div class="form-group">
+                      <input id="username" type="text" name="username" tabindex="1" placeholder="Username" value="" class="form-control">
+                    </div>
+                    <div class="form-group">
+                      <input id="password" type="password" name="password" tabindex="2" placeholder="Password" class="form-control">
+                    </div>
+                    <div class="form-group text-center">
+                      <input id="remember" type="checkbox" tabindex="3" name="remember">
+                      <label for="remember"> Remember Me</label>
+                    </div>
+                    <div class="form-group">
+                      <div class="row">
+                        <div class="col-sm-6 col-sm-offset-3">
+                          <input id="login-submit" type="submit" name="login-submit" tabindex="4" value="Log In" class="form-control btn btn-login">
+                        </div>
+                        <div class="form-group">
+                          <div class="row">
+                            <div class="col-lg-12">
+                              <div class="text-center"><a href="#" tabindex="5" class="forgot-password">Forgot Password?</a></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                  <form id="register-form" action="#" method="post" role="form" style="display: none;">
+                    <div class="form-group">
+                      <label for="nume">Nume</label>
+                      <input id="nume" type="text" name="nume" tabindex="1" placeholder="Nume" value="" class="form-control">
+                    </div>
+                    <div class="form-group">
+                      <label for="prenume">Prenume</label>
+                      <input id="prenume" type="text" name="prenume" tabindex="1" placeholder="Prenume" value="" class="form-control">
+                    </div>
+                    <div class="form-group">
+                      <label for="email">Email</label>
+                      <input id="email" type="email" name="email" tabindex="1" placeholder="Email" value="" class="form-control">
+                    </div>
+                    <div class="form-group">
+                      <label for="industry">Industry
+                        <select class="form-control">
+                          <option>Industry</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                          <option>5</option>
+                        </select>
+                      </label>
+                    </div>
+                    <div class="form-group">
+                      <label for="tara">Tara</label>
+                      <input id="email" type="text" name="tara" tabindex="1" placeholder="Tara" value="" class="form-control">
+                    </div>
+                    <div class="form-group">
+                      <label for="functie">Functie</label>
+                      <input id="email" type="text" name="functie" tabindex="1" placeholder="Functie" value="" class="form-control">
+                    </div>
+                    <div class="form-group">
+                      <label for="password">Password</label>
+                      <input id="password" type="password" name="password" tabindex="2" placeholder="Password" class="form-control">
+                    </div>
+                    <div class="form-group">
+                      <input id="confirm-password" type="password" name="confirm-password" tabindex="2" placeholder="Confirm Password" class="form-control">
+                    </div>
+                    <div class="form-group"></div>
+                    <div class="row">
+                      <div class="col-sm-6 col-sm-offset-3">
+                        <input id="register-submit" type="submit" name="register-submit" tabindex="4" value="Register Now" class="form-control btn btn-register">
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6"><a href="http://www.minexgroup.eu/" class="logo"><img src="assets/images/logo_orange.png" alt="Minex Romania" data-pin-nopin="true"></a>
+            <p>Copyright Minex Group. All Right Reserved</p>
+          </div>
+          <div class="col-xs-12 col-sm-6">
+            <ul class="list-inline text-right">
+              <li><a href="#" class="facebook"><i class="fa fa-facebook-official fa-2x"></i></a></li>
+              <li><a href="#" class="youtube"><i class="fa fa-youtube fa-2x"></i></a></li>
+              <li><a href="#" class="twitter"><i class="fa fa-twitter fa-2x"></i></a></li>
+              <li><a href="#" class="linkedin"><i class="fa fa-linkedin-square fa-2x"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <!--script(src="js/jquery.min.js")-->
+    <!--script(src="js/bootstrap.min.js")-->
+    <script src="assets/javascripts/login.js"></script>
+  </body>
+</html>
