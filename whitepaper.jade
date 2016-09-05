@@ -4,21 +4,27 @@ append styles
 block body
 	include template/topNavigation.jade
 	.container-fluid.spaceTop.headMaterial.headMaterial-whitepaper
-		// - header Page
+		//- header Page
 		.container
 			.row
 				.col-xs-12.col-sm-3
 					img.img-responsive(src='assets/images/thumb/whitepaper01.jpg', alt='whitepaper01')
-					// Go to www.addthis.com/dashboard to customize your tools
+					//- Go to www.addthis.com/dashboard to customize your tools
 				.col-xs-12.col-sm-9
 					h2 
 						| How to Make Your Ebook Marketing Campaign
 						br
 						small Subtitle
+					button.btn.btn-primary.btn-lg(type='button', data-toggle='modal', data-target='#myModal')
+						| DOWNLOAD* 
+						small (PDF file)
+					p * you need to be registred
+					hr
+					.clearfix
 					.addthis_sharing_toolbox
 	.container.description
 		.row
-			.col-xs-12.col-sm-6
+			.col-xs-12.col-sm-8.col-sm-offset-2
 					h4 Descriere
 					p
 						| La nivelul lunii septembrie, tara noastra luase de la Bruxelles doar 9.9 miliarde EUR fonduri structurale, dintr-un total de 19 miliarde EUR, pe care Uniunea Europeana ni le-a alocat.
@@ -29,45 +35,60 @@ block body
 						li Notifications
 						li Layout anchors and constraints
 						li Audio APIs
-			.col-xs-12.col-sm-6.col-md-5.col-md-offset-1
-				.row
-					form.form-signin
-						.col-xs-12
-							h4.form-signin-heading Sign UP
-							small You need to sign up for IQ Industrial in order to access this materials.
-						.col-xs-12.col-sm-6
-							label(for='nume') Nume
-							input#nume.form-control(type='name', placeholder='Nume', required='', autofocus='')
-						.col-xs-12.col-sm-6
-							label(for='prenume') Prenume
-							input#prenume.form-control(type='name', placeholder='Prenume', required='', autofocus='')
-						.col-xs-12.col-sm-6
-							label(for='inputEmail') Email address
-							input#inputEmail.form-control(type='email', placeholder='Email address', required='', autofocus='')
-						.col-xs-12.col-sm-6
-							label(for='country') Country
-							select.form-control
-								option Country
-								option 2
-								option 3
-								option 4
-								option 5
-						.col-xs-12.col-sm-6
-							label(for='industry') Industry
-							select.form-control
-								option Industry
-								option 2
-								option 3
-								option 4
-								option 5
-						.col-xs-12.col-sm-6
-							label(for='position') Position
-							input#position.form-control(type='position', placeholder='Position', required='')
-						//- .col-xs-12
-							.checkbox
-								label
-									input(type='checkbox', value='remember-me')
-									|  Remember me
-						.col-xs-12
-							br
-							button.btn.btn-lg.btn-primary.btn-block(type='submit') Create account
+					button.btn.btn-default.btn-lg(type='button', data-toggle='modal', data-target='#myModal')
+						| DOWNLOAD* 
+						small (PDF file)
+					p * you need to be registred
+	//- Modal
+	#myModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel')
+		.modal-dialog(role='document')
+			.modal-content
+				.modal-header
+					button.close(type='button', data-dismiss='modal', aria-label='Close')
+						span(aria-hidden='true') ×
+					h4#myModalLabel.modal-title.form-signin-heading Sign UP	
+				.modal-body
+					.row
+						form.form-signin
+							.col-xs-12
+								small You need to sign up for IQ Industrial in order to access this materials.
+							.col-xs-12.col-sm-6
+								label(for='nume') Nume
+								input#nume.form-control(type='name', placeholder='Nume', required='', autofocus='')
+							.col-xs-12.col-sm-6
+								label(for='prenume') Prenume
+								input#prenume.form-control(type='name', placeholder='Prenume', required='', autofocus='')
+							.col-xs-12.col-sm-6
+								label(for='inputEmail') Email address
+								input#inputEmail.form-control(type='email', placeholder='Email address', required='', autofocus='')
+							.col-xs-12.col-sm-6
+								label(for='country') Country
+								select.form-control
+									option Country
+									option 2
+									option 3
+									option 4
+									option 5
+							.col-xs-12.col-sm-6
+								label(for='industry') Industry
+								select.form-control
+									option Industry
+									option 2
+									option 3
+									option 4
+									option 5
+							.col-xs-12.col-sm-6
+								label(for='position') Position
+								input#position.form-control(type='position', placeholder='Position', required='')
+							//- .col-xs-12
+								.checkbox
+									label
+										input(type='checkbox', value='remember-me')
+										|  Remember me
+							//- .col-xs-12
+								br
+								button.btn.btn-lg.btn-primary.btn-block(type='submit') Create account
+				.modal-footer
+					button.btn.btn-default(type='button', data-dismiss='modal') Close
+					button.btn.btn-primary(type='button') Create account
+					
